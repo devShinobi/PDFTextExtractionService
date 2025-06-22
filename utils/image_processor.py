@@ -7,6 +7,8 @@ from datetime import datetime
 from typing import List, Dict, Any, Tuple
 import pytesseract
 from pdf2image import convert_from_path
+from .text_cleaner import TextCleaner
+from .context_analyzer import ContextAnalyzer
 
 # Configure Tesseract path for Windows
 # Update this path to match your Tesseract installation
@@ -18,7 +20,8 @@ if os.name == 'nt':  # Windows
 class ImageProcessor:
     def __init__(self):
         """Initialize the image processor."""
-        pass
+        self.text_cleaner = TextCleaner()
+        self.context_analyzer = ContextAnalyzer()
 
     def pdf_to_images(self, pdf_path: str, dpi: int = 200) -> List[np.ndarray]:
         """Convert PDF to images.
@@ -221,9 +224,9 @@ class ImageProcessor:
         print(f"Detected {len(regions)} text blocks.")
         return result_image, regions
 
-    def extract_text_from_regions(self, image: np.ndarray, regions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Extracts text by running OCR on each detected region."""
-        print("Extracting text from final bounding boxes...")
+    def extract_text_from_regions(self, image: np.ndarray, regions: List[Dict[str, Any]], min_region_confidence: int = 50) -> List[Dict[str, Any]]:
+        """Extracts text by running OCR on each detected region and filters based on confidence."""
+        print(f"Extracting text from final bounding boxes (min region confidence: {min_region_confidence}%)...")
         
         extracted_texts = set()
         final_paragraphs = []
@@ -236,20 +239,53 @@ class ImageProcessor:
             roi = image[max(0, y - padding):min(image.shape[0], y + h + padding), 
                         max(0, x - padding):min(image.shape[1], x + w + padding)]
             
-            # Use PSM 4 which assumes a single column of text of variable sizes.
-            # This is generally more robust for OCRing paragraph blocks.
-            text = pytesseract.image_to_string(roi, config='--psm 4').strip()
+            try:
+                # Use PSM 6 to get structured data including confidence scores
+                data = pytesseract.image_to_data(roi, config='--psm 6', output_type=pytesseract.Output.DICT)
+                
+                # Calculate average confidence for the region
+                confidences = [int(c) for c in data['conf'] if int(c) != -1]
+                if not confidences:
+                    avg_confidence = 0
+                else:
+                    avg_confidence = sum(confidences) / len(confidences)
+                
+                # If average confidence is too low, skip this region
+                if avg_confidence < min_region_confidence:
+                    if avg_confidence > 0: # Don't print for empty regions
+                        print(f"Skipping region with low avg confidence: {avg_confidence:.2f}% (min: {min_region_confidence}%)")
+                    continue
 
-            if text and text not in extracted_texts:
-                region['text'] = text
-                region['text_length'] = len(text)
-                extracted_texts.add(text)
-                final_paragraphs.append(region)
+                # Reconstruct text from words to avoid calling tesseract again
+                lines = {}
+                for i in range(len(data['text'])):
+                    text = data['text'][i].strip()
+                    if text:
+                        # block, par, line
+                        key = (data['block_num'][i], data['par_num'][i], data['line_num'][i])
+                        if key not in lines:
+                            lines[key] = []
+                        lines[key].append(data['text'][i])
+                
+                text_lines = []
+                for key in sorted(lines.keys()):
+                    text_lines.append(" ".join(lines[key]))
+                
+                text = "\n".join(text_lines).strip()
+
+                if text and text not in extracted_texts:
+                    region['text'] = text
+                    region['text_length'] = len(text)
+                    region['avg_confidence'] = avg_confidence
+                    extracted_texts.add(text)
+                    final_paragraphs.append(region)
+            except Exception as e:
+                print(f"Warning: Could not process a text region. Error: {e}")
         
-        print(f"Extracted {len(final_paragraphs)} unique text blocks.")
+        print(f"Extracted {len(final_paragraphs)} unique text blocks meeting confidence threshold.")
         return final_paragraphs
 
-    def process_pdf(self, pdf_path: str, output_dir: str = "test_output", final_output_dir: str = None, exclude_bottom_percent: float = 0.07, exclude_top_percent: float = 0.07, ignore_vertical_text: bool = False, debug: bool = False) -> List[Dict[str, Any]]:
+    def process_pdf(self, pdf_path: str, output_dir: str = "test_output", final_output_dir: str = None, exclude_bottom_percent: float = 0.07, exclude_top_percent: float = 0.07, ignore_vertical_text: bool = False, debug: bool = False, min_region_confidence: int = 50, perform_cleanup: bool = True, analyze_context: bool = False) -> List[Dict[str, Any]]:
         """Process a PDF file: convert to images, detect paragraphs, and extract text."""
         print(f"Processing PDF: {pdf_path}")
         print(f"Excluding top {exclude_top_percent*100}% and bottom {exclude_bottom_percent*100}% of each page.")
@@ -284,21 +320,31 @@ class ImageProcessor:
                 cv2.imwrite(output_path, result_image)
                 print(f"Saved detected blocks to: {output_path}")
             
-            paragraphs_with_text = self.extract_text_from_regions(image, regions)
+            paragraphs_with_text = self.extract_text_from_regions(image, regions, min_region_confidence=min_region_confidence)
             
             for paragraph in paragraphs_with_text:
                 paragraph['page'] = page_num + 1
             
             all_paragraphs.extend(paragraphs_with_text)
         
+        # Sort paragraphs now so indices are stable before context analysis
+        all_paragraphs.sort(key=lambda p: (p.get('page', 0), p.get('id', 0)))
+
+        # Analyze context for outliers if requested
+        if analyze_context and all_paragraphs:
+            paragraph_texts = [p.get('text', '') for p in all_paragraphs]
+            outlier_indices = self.context_analyzer.find_outliers(paragraph_texts)
+            for idx in outlier_indices:
+                all_paragraphs[idx]['is_outlier'] = True
+
         end_time = time.time()
         print(f"Total processing time: {end_time - start_time:.2f} seconds")
         
-        self.save_text_to_file(all_paragraphs, text_output_dir, pdf_path)
+        self.save_text_to_file(all_paragraphs, text_output_dir, pdf_path, perform_cleanup=perform_cleanup)
         
         return all_paragraphs
 
-    def save_text_to_file(self, paragraphs: List[Dict[str, Any]], output_dir: str, pdf_path: str):
+    def save_text_to_file(self, paragraphs: List[Dict[str, Any]], output_dir: str, pdf_path: str, perform_cleanup: bool = True):
         """Saves extracted text to a file, sorted by page and reading order."""
         if not paragraphs:
             print("No text was extracted, skipping file save.")
@@ -308,9 +354,7 @@ class ImageProcessor:
         file_name = os.path.splitext(base_name)[0]
         output_filepath = os.path.join(output_dir, f"{file_name}_extracted_text.txt")
 
-        # Sort paragraphs by page, then by their ID, which respects the column-aware sort.
-        paragraphs.sort(key=lambda p: (p.get('page', 0), p.get('id', 0)))
-
+        # Paragraphs are already sorted from the process_pdf method.
         with open(output_filepath, 'w', encoding='utf-8') as f:
             current_page = -1
             for para in paragraphs:
@@ -318,7 +362,14 @@ class ImageProcessor:
                     current_page = para.get('page', -1)
                     f.write(f"\n{'='*20} Page {current_page} {'='*20}\n\n")
                 
-                f.write(para.get('text', ''))
+                text_to_write = para.get('text', '')
+                if perform_cleanup:
+                    text_to_write = self.text_cleaner.clean_text(text_to_write)
+                
+                if para.get('is_outlier', False):
+                    f.write("[OUTLIER] ")
+
+                f.write(text_to_write)
                 f.write('\n\n' + '-'*40 + '\n\n')
 
         print(f"Successfully saved extracted text to {output_filepath}") 

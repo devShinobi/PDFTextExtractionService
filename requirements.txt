@@ -16,3 +16,10 @@ typing-extensions>=4.7.0
 # Windows: https://github.com/UB-Mannheim/tesseract/wiki
 # Linux: sudo apt-get install tesseract-ocr
 # macOS: brew install tesseract
+
+# NLP and Machine Learning
+sentence-transformers
+scikit-learn
+torch
+torchvision
+torchaudio

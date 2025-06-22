@@ -1,4 +1,5 @@
 import argparse
+import sys
 from utils.image_processor import ImageProcessor
 from utils.batch_processor import BatchProcessor
 import os
@@ -12,6 +13,10 @@ def main():
     parser.add_argument("--final_output_dir", type=str, help="Directory to save final text output files (separate from intermediate outputs).")
     parser.add_argument("--debug", action="store_true", help="Enable debug mode to save bounding box images.")
     parser.add_argument("--max_workers", type=int, default=10, help="Maximum number of parallel workers for batch processing (default: 10).")
+    parser.add_argument("--min_region_confidence", type=int, default=50, help="Minimum average confidence for a text region to be included (0-100). Default: 50.")
+    parser.add_argument("--cleanup", action=argparse.BooleanOptionalAction, default=True, help="Enable or disable post-processing text cleanup (e.g., de-hyphenation). Use --no-cleanup to disable.")
+    parser.add_argument("--analyze_context", action="store_true", help="Enable semantic analysis to find and tag outlier text regions.")
+    parser.add_argument("--parallel_mode", type=str, choices=['process', 'thread'], default='thread', help="The parallel execution mode to use ('thread' for I/O-bound, 'process' for CPU-bound). Default: thread.")
     parser.add_argument("--top_margin", type=float, default=0.07, help="Percentage of top margin to exclude (0.0 to 1.0).")
     parser.add_argument("--bottom_margin", type=float, default=0.07, help="Percentage of bottom margin to exclude (0.0 to 1.0).")
     parser.add_argument("--ignore_vertical", action="store_true", help="If set, ignore text that appears to be vertically oriented.")
@@ -26,7 +31,10 @@ def main():
     processor_kwargs = {
         'exclude_top_percent': args.top_margin,
         'exclude_bottom_percent': args.bottom_margin,
-        'ignore_vertical_text': args.ignore_vertical
+        'ignore_vertical_text': args.ignore_vertical,
+        'min_region_confidence': args.min_region_confidence,
+        'perform_cleanup': args.cleanup,
+        'analyze_context': args.analyze_context
     }
         
     if os.path.isfile(args.input_path):
@@ -67,6 +75,7 @@ def main():
             final_output_dir=args.final_output_dir,
             max_workers=args.max_workers,
             debug=args.debug,
+            mode=args.parallel_mode,
             **processor_kwargs
         )
         
@@ -88,4 +97,6 @@ def main():
         print(f"\nProcessing complete. All outputs saved in '{args.output_dir}' directory.")
 
 if __name__ == "__main__":
+    # Add project root to path to allow imports
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     main() 

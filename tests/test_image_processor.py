@@ -49,8 +49,10 @@ def test_pdf_processing():
     print(f"Excluding top {exclude_top_percent*100}% of each page")
     print(f"Excluding bottom {exclude_bottom_percent*100}% of each page")
     paragraphs = processor.process_pdf(pdf_path, output_dir="test_output", 
+                                     debug=True,
                                      exclude_bottom_percent=exclude_bottom_percent,
-                                     exclude_top_percent=exclude_top_percent)
+                                     exclude_top_percent=exclude_top_percent,
+                                     min_region_confidence=0.75)
     
     # Print results
     print(f"\nExtracted {len(paragraphs)} paragraphs:")

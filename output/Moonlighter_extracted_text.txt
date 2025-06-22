@@ -1,0 +1,339 @@
+
+==================== Page 1 ====================
+
+HBR CASE STUDY AND COMMENTARY How should Zagante y Systems handle this The Moonlighter moonlighting issue?
+
+----------------------------------------
+
+[OUTLIER] by Bronwyn Fryer
+
+----------------------------------------
+
+[OUTLIER] Five commentators offer expert advice.
+
+----------------------------------------
+
+
+==================== Page 2 ====================
+
+[OUTLIER] Your best programmer is taking on outside work to boost his income.
+It’s all on his own time—so do you have a right to complain?
+
+----------------------------------------
+
+[OUTLIER] The Moonlighter
+
+----------------------------------------
+
+[OUTLIER] by Bronwyn
+
+----------------------------------------
+
+[OUTLIER] Fryer
+
+----------------------------------------
+
+[OUTLIER] Jeremy Hicks, the lead programmer, walked in the office at eight o’clock on a Sunday night and literally did a double take when he spotted his boss in her office. “Hey, Mel,” he piped up as he passed her door. “Burning the midnight oil, eh?” Equally surprised to find she wasn’t alone, Melanie spun around in her chair to face the door and started to answer. But Jeremy didn’t pause to chat. So Melanie put down the files she’d just pulled out of a drawer, picked up her coffee mug, and followed him to his cubicle.
+“Jeremy, what the hey are you doing here tonight?” she asked, leaning casually against the cubby wall. “Getting some peace and quiet, away from the baby?” “Oh, you know how it is,” Jeremy said, his eyes fixed on his monitor as it flickered to life.
+“Deadline’s coming up.” She noted his unshaven face, his rumpled clothes; he looked like he’d spent the weekend sleeping in snatches.
+She could just picture all six feet, four inches of
+
+----------------------------------------
+
+[OUTLIER] him draped on a living room couch too small for his frame, his large hand brushing the floor, his mouth open in an exhausted snore, only to be awakened again and again by a fussy baby.
+Empathy washed over her as she remembered her own daughter’s colicky nights—and that feeling that she would never, ever get a decent night’s sleep again.
+“Wow. I appreciate your dedication,” Melanie said, “but I feel terrible that this project is keeping you from Goodnight Moon duty again. I thought we all agreed yesterday we were in good enough shape that no one should have to come in today.” Melanie waited for Jeremy to tell her what last-minute bug he’d discovered, but he didn’t elaborate. “Tell you what,” she continued, “I was just here catching up on all the administrivia I’ve been ignoring.” She sighed. “Marc took the kids to a hockey game.
+Are you working on something I could help you with?”
+
+----------------------------------------
+
+[OUTLIER] HBR’s cases, which are fictional, present common managerial dilemmas and offer concrete solutions from experts.
+
+----------------------------------------
+
+
+==================== Page 3 ====================
+
+[OUTLIER] “No, really, Mel. It’s nothing. You go on home.” He glanced at her, then away again—a little shamefacedly, Melanie thought.
+She considered pressing the offer further but decided against it. Best, perhaps, to leave Jeremy alone. “Okay then. Guess I’ll save some of this fun for tomorrow.” First, Melanie started to walk away, but she thought better of it. She called back over his cubicle wall, “And, Jeremy, I do appreciate it. Once we get this thing into production, I’ll see to it that you and some of the other workaholics around here get some comp days, okay?”
+
+----------------------------------------
+
+[OUTLIER] Skin in the Game Back in her office, Melanie started to put away the files she’d pulled, then sighed and sat down.
+She really did have a backlog of paperwork— including the allimportant task of annual performance reviews. She had promised her boss she’d complete her self-assessment by midweek, as well as her recommendations for promotions within her group. She gazed out the window for a moment. The bright full moon was just rising above the tree line. The woods, she thought, are lovely, dark, and deep. Then the rest of Frost’s poem came to her. “But I have promises to keep,” she murmured. “And miles to go before I sleep.” Jeremy wasn’t the only person at Zagante Systems putting in long hours. Over the past few weeks, with the software code freeze imminent, a few dedicated souls had actually hauled in their sleeping bags and slept in their cubes. Melanie insisted on going home to her own bed, but she’d still slept fitfully, her brain replaying screenfuls of bug fixes and quality assurance tests. Even though she was reasonably certain that the code was in excellent shape, her 4 am anxieties persisted. A lot was riding on the upcoming product launch, including her own hoped-for promotion to senior vice president of development.
+Zagante’s TerraPix 2.0 mapmaking software, designed to allow oil exploration companies to view topographical details in three dimensions, was a big leap ahead of the current technology. The innovative product would come none too soon because, like just about every other technology-related business in Silicon Valley, Zagante’s fortunes had suffered during the past two years. Its saving grace had been its niche; as a supplier of unique geophysical imaging technology to a few large oil companies,
+
+----------------------------------------
+
+[OUTLIER] Zagante was able to survive while software companies left and right were forced to shut their doors. Nevertheless, Zagante had felt the financial squeeze, and a hiring freeze meant that existing employees, while glad to have jobs at all, had to work unusually hard to get the new product out the door.
+Melanie quickly finished her first few evaluations, then turned her attention to the group manager position. She was leaning toward giving Jeremy this critical job, but she needed to be sure that he truly deserved it more than the other internal candidate, Tom Gomez, did. She took out Tom’s and Jeremy’s self-evaluation forms and laid them side by side. Turning first to Tom’s, she ran her eyes down the list of accomplishments: “Personally discovered and fixed 23 bugs. Worked closely with QA testers. Successfully managed testing team.” She leaned back in her chair and stared out the window again. Without a doubt, Tom was skilled and hardworking. He was always the first to arrive, the last to leave, and usually ate lunch at his desk. He had also come up with good suggestions for getting the most out of this product release. It had been his idea to invite geophysicists to review the software under development. As a result, TerraPix 2.0 promised to be even more useful than any competitors’ products. Clearly, Tom was dedicated to his work—and to the company’s overall success.
+Next, Melanie studied Jeremy’s list. “Completed successful beta-test program ahead of schedule,” she read. “Managed group of five programmers.” She smiled. Jeremy was hardly bragging. Over the past several months, he had shown flashes of brilliance, coming up with creative solutions to problems that could have brought the team to a halt. He was also a constant source of energy and enthusiasm. Even after the baby was born, he’d maintained an admirable pace—and his good humor. In all honesty, Melanie liked Jeremy more than Tom.
+She considered him a friend.
+Her mind nearly made up, Melanie closed her files and stuffed them into her briefcase.
+Before heading for the door, though, she decided to swing past Jeremy’s cubicle one more time—at least to offer moral support. She rounded the corner and found him hunched over his keyboard with his back to her; he hadn’t heard her approach. Over his shoulder, she saw his monitor erupt with bizarre images:
+
+----------------------------------------
+
+
+==================== Page 4 ====================
+
+[OUTLIER] Let me get this straight.
+You're moonlighting?
+And you think that’s a good idea? We have our own project. I really need you to be fully engaged in
+
+----------------------------------------
+
+[OUTLIER] it.
+
+----------------------------------------
+
+[OUTLIER] There was a cavernous tunnel with ominouslooking, 3-d shapes advancing through it, holding futuristic bazookas. Suddenly, Jeremy froze the frame, opened a programming window, and typed in a line.
+Jeremy wasn’t working on TerraPix. He was programming a game.
+
+----------------------------------------
+
+[OUTLIER] Don’t Quit Your Day Job The Japanese restaurant was almost empty, and Jeremy and Melanie settled at a table near the door. After Jeremy put down his menu, Melanie decided to be blunt. “Okay, Jeremy, what’s up?” Jeremy looked at her blankly for a few seconds, then smiled. “Everything’s fine at home, Mel. Really.” “No, that’s not the issue. I mean, what were you working on last night?” “Ah.” There was an uncomfortable silence; Melanie could practically hear the frantic scrabbling in Jeremy’s brain. Then he shrugged sheepishly. “Look, it’s just a little project I picked up. It’s no big deal. Remember I told you about my brother-in-law’s company? The one that makes 3-d computer games? They’re killing themselves right now trying to get this new one out before some big trade show. So, you know, they sort of made me an offer I couldn’t refuse. And honestly, Mel,” Jeremy warmed to his topic, “it is a totally cool game.
+It beats the pants off Doom.” Melanie scowled and chewed on her California roll. “Okay, let me get this straight. You’re moonlighting?” When Jeremy didn’t deny it, she pushed harder: “And you think that’s a good idea? I mean, we have our own project, which might not be a totally cool game, but it’s pretty damned important. I really need you to be fully engaged in it.” “Whoa.” Jeremy held up his hands in protest. “I am fully engaged, Mel. I wouldn’t be doing this if I didn’t feel like I could handle it nights and weekends. Believe me, I’ve been very up front with them about how busy I am, and how I can’t compromise my job or anything. They’re okay with that.” These last words annoyed Melanie even more. Who were they to be okay or not with the situation? Why hadn’t he been so admirably up front with her? She was about to blast him with words to that effect when suddenly her anger turned to worry. What if her lead programmer already had one foot out the door?
+
+----------------------------------------
+
+[OUTLIER] “And what if they offered you a full-time position?” she asked tentatively. “Am I supposed to infer from this that you’re not really happy at Zagante?” Jeremy looked sincerely upset at the implication. “No way. I mean, Anna and I have a new baby—it is absolutely not a good time for me to join some seat-of-the-pants game company.” Then Jeremy seemed to remember whom he was talking to. “Besides, I like working for you. You’re a great boss—you know that.” Melanie shot him a look, but he didn’t look away. “I’m not messing with you, Mel. It’s just...well, fun to have a new challenge— something so different from what we do day in, day out, you know? I’ve been gaming since I was four or something. It’s how I got into this business in the first place. Besides, I’m getting pretty good at using that MAX 4 modeling tool. Remember that we were thinking we should check it out? I think maybe we could use it...” “Yeah, okay,” Melanie cut in, “but I’m trying to understand what’s going on here. Are you doing the extra work because it’s more fun than Zagante, or because you need the extra cash?” “Well, I’m not taking time away from the baby just for kicks,” said Jeremy, a little resentfully. “Maybe you haven’t noticed lately, but living in Silicon Valley isn’t getting any cheaper, especially now that Anna isn’t going back to work for a while. So, yeah, the money doesn’t hurt.” Melanie considered her options. “All right.
+Fair enough.” She thought about telling Jeremy that he had a great shot at a promotion but decided against it. “Well, do me a favor.
+Keep your eye on TerraPix, and only TerraPix, for the next few days, will you? We expect 100% devotion to the launch. Please don’t do anything that would compromise it—or your great reputation. I won’t tell anyone what you're doing.” Jeremy glanced up, about to object. Then, reconsidering, he picked up his cup and drained the last of his green tea. “Okay, thanks.
+I guess.”
+
+----------------------------------------
+
+[OUTLIER] Searching for Answers That night, after tucking her daughter in bed, Melanie sat down at her laptop and began a Google search. “Moonlighting,” she typed.
+Then, dismayed at the number of hits, she en-
+
+----------------------------------------
+
+
+==================== Page 5 ====================
+
+[OUTLIER] Bronwyn Fryer isa senior editor at HBR.
+
+----------------------------------------
+
+[OUTLIER] tered, “Fired for moonlighting.” She came across one case involving a city water department supervisor in Florida. He ran an irrigation business on the side and had used city resources to do some of the work. Melanie thought about Zagante’s powerful computers, undoubtedly faster than anything Jeremy had at home. In another case, a consultant had worked directly for one of his firm’s clients— at a dramatically lower billing rate. Then Melanie’s search led her to an elementary school teacher who moonlighted as a stripper, which, while it amused her, didn’t offer any management clues.
+She leaned back in her chair. Jeremy’s case was not cut-and-dried. The company he was moonlighting for was hardly a competitor— except for 3-d programming talent. But Jeremy had used Zagante’s computer, at least once that Melanie knew of. Still, she was not about to fire him; he was too talented to lose. But did he still deserve to be promoted? Melanie typed, “Promoted for moonlighting.” No surprise. Zero hits.
+
+----------------------------------------
+
+[OUTLIER] A Possible Alternative Jill Darby, Zagante’s HR director, was on the phone when Melanie peeked into her office.
+Jill waved her hand toward a chair. “Okay, George, we’ll see you Thursday at nine o’clock. Bye.” She hung up the phone and looked up over her bifocals. “Hello, Melanie.
+What can I do for you?” “Quick question. Do we have any policies about employees’ moonlighting?” “Uh-oh.” Jill raised her eyebrows. “Who’s trying to get you to consult?” “Nobody, Jill,” Melanie said flatly. “But the question has come up in my team, and I thought I’d check with you.” Jill frowned a little, as if running through a mental list of names in Melanie’s group. “No,” she said finally, “we don’t have a policy about moonlighting. And that’s partly because our state has pretty clear laws about it. But remember when you were hired, we had you sign a noncompete agreement. Usually that’s sufficient.” Her glasses glinted. “May I ask, are we facing a potential problem?” Melanie bristled. Her team wasn’t a source of problems; it was a source of solutions. “I’m concerned because some people—not just in my group—may feel frustrated. Raises have been minimal this year. And they understand
+
+----------------------------------------
+
+[OUTLIER] “who’s
+
+----------------------------------------
+
+[OUTLIER] that we’re in a tight cash situation. But if they can’t meet their financial obligations...” “Point well taken,” Jill interjected. “And if that’s the case, you might want to talk to Aaron.” She was referring to Aaron Grzyki, Zagante’s CFO. “I know in a couple of cases, we've been able to arrange for low-interest loans to people in a tight spot.” Suddenly Melanie was glad she’d stopped by; that might be just the solution.
+
+----------------------------------------
+
+[OUTLIER] The Wright Perspective On the way back to her office, Melanie glanced into Jeremy’s cube. He was staring at the computer monitor, seemingly captivated by his work. Melanie was seized with a desire to take a closer look, to make sure it was TerraPix 2.0 code on his screen, and to ask for an impromptu status report. Almost as quickly, she stopped herself.
+Later, driving home from San Jose into the dusky foothills of Los Gatos, Melanie was lost in thought. Jeremy wasn’t a traitor: He’d been at Zagante for five years, moved up through the ranks, and seemed to enjoy his work. And heaven knows he wasn’t the first programmer in history to moonlight. So why did this bother her so much? Maybe because, despite opportunities, she’d never done it herself?
+Melanie pulled the Camry into the driveway. Her husband, Marc, was standing on the porch talking to David, the architect they’d hired to design their new master bedroom suite. “Hey guys,” Melanie said as she stepped out of the car. “How’s the planning going?” “David’s just recommending a different tile for the bathroom,” Marc said. “More expensive, of course.” He grinned. “How was work?” “Crazy,” she said. Then she turned to David.
+“Hey, here’s a piece of trivia I picked up last night on the Internet. Did you know Frank Lloyd Wright was fired for moonlighting?” David nodded. “I did know that, actually.
+One of those famously bad decisions. I bet that his boss was kicking himself till the day he died.” Melanie winced. “Easy for you to say. I just found out that my lead programmer has been doing some work on the side.” Marc shot her a worried look. “Jeremy?
+Are you sure?” “Yeah,” Melanie said, grimacing. “Oh, not that I’m going to fire him. I guess when
+
+----------------------------------------
+
+[OUTLIER] “Jeremy?
+
+----------------------------------------
+
+
+==================== Page 6 ====================
+
+[OUTLIER] you manage programmers, moonlighting comes with the territory.” “Same with architects. Like Frank Lloyd Wright.” David said, and they all laughed. “I remember when I worked at Waybridge Associates. Pretty buttoned-down company in Sausalito that contracts with all the big commercial firms in San Francisco. Every architect there had a little side business designing dream houses for dot-com gazillion-aires.” He smirked.
+“A lot of those guys never got paid, of course.” “wasn’t that a problem?” Melanie asked, then laughed at herself. “No, I don’t mean not getting paid. I mean, didn’t their day jobs suffer?” “Not really. It was almost expected, to tell you the truth. For one thing, it allowed the firm to pay everyone less than they were worth. And sometimes people came up with some creative stuff on those projects, then brought fresh ideas back into the system. I guess management was more likely to see it as—what do you computer types call it?—not a bug but a feature.”
+
+----------------------------------------
+
+[OUTLIER] It’s Not the Money Jeremy was at his desk when Melanie walked by. She smiled and tapped him on the shoulder. For the first time in weeks, he looked well rested. He smiled widely. “Hey, Mel!” “1 think I have some good news for you.
+Come into my office and let’s talk.”
+
+----------------------------------------
+
+[OUTLIER] Jeremy followed her inside, and Melanie asked him to shut the door. He took a seat.
+“Aaron says the company can set you up witha low-interest loan,” she said happily. “Isn’t that great? That way you won’t have to work on the side.” Jeremy’s face fell. “Um, Mel, I really appreciate that, but it’s not like we have to take out a loan. I mean, this side gig pays great, and I’m happy to have some extra cash. But I’m also really into the project. And I am learning a lot that might be useful...” Melanie’s tone was testy. “C’mon, Jeremy.
+Like you're doing me a favor, working extra just to learn a program we might never use, and that the company would have happily paid for you to learn, anyway. And what about the rest of the team? What kind of signal does it send to them?” Now Jeremy’s voice rose. “I don’t know.
+They’re all grown-ups. So long as I pull my own weight around here, it shouldn’t be anyone’s business what I do with the rest of my time.” Melanie froze. One thing was clear: It was time for her—and Zagante Systems—to make acall.
+
+----------------------------------------
+
+How should Zagante Systems handle this moonlighting issue? - Five commentators offer expert advice.
+See
+
+----------------------------------------
+
+
+==================== Page 7 ====================
+
+[OUTLIER] How
+
+----------------------------------------
+
+[OUTLIER] should Zagante
+
+----------------------------------------
+
+[OUTLIER] Systems handle this
+
+----------------------------------------
+
+[OUTLIER] moonlighting
+
+----------------------------------------
+
+[OUTLIER] issue?
+
+----------------------------------------
+
+[OUTLIER] Instead of worrying about Jeremy's moonlighting, Zagante might begin by getting to know him better.
+
+----------------------------------------
+
+[OUTLIER] Implicit in this case study is Zagante’s assumption that Jeremy’s an employee, not what I would call an “investor.” Yet that’s exactly what he is.
+Consider that Jeremy has only 1,440 minutes in a day—time he can invest in any way he chooses. Zagante covets that time, as well as his passion and creativity. Why should he, or anyone, invest these things in Zagante Systems? The Jeremys of the world—talented, dedicated knowledge workers—want better returns on their investment in a firm. How, then, does Zagante provide greater returns to Jeremy than does his outside client? (Money, by the way, is not the answer, though it helps.) As Zagante looks at this question, it might want to borrow a page from IBM’s playbook.
+In the dot-com era, unable to attract the best of the best right out of college, IBM created its Extreme Blue internship program. The program hires the most promising MBA and computer-science students from the world’s best schools. The summer interns work on critical, cutting-edge research and development projects—with the ultimate benefit of building a pipeline of promising recruits for the company.
+After running this program for a few years, IBM has learned that up-and-coming talent have four key work priorities. The first is highly interesting work. As IBM has discovered, young people yearn to do something that is not only exciting to them but also meaningful for business and society. Zagante may believe that TerraPix 2.0 is incredibly important, but it doesn’t meet Jeremy’s criteria for satisfying work. If the company wants to keep him, Melanie and her superiors will have to do a much better job of matching Jeremy’s views of great work with their development pipeline. That’s not to say Zagante should put Jeremy in charge of strategic planning, but this approach does take a much broader view of talent management than most companies currently hold.
+The second priority for the Jeremys of the world is to work with interesting people.
+
+----------------------------------------
+
+[OUTLIER] Zagante won’t keep Jeremy for long because Melanie isn’t up to his standards, and developing Melanie’s managerial skills won’t solve the problem. Nowadays, young workers have deep social networks. Jeremy is not just comparing Melanie with other Zagante managers; he’s comparing her with all the smart people in his universe. Talented, creative workers like Jeremy need to know, “Who’s on my team?
+Who’s my coach? My mentor? How much access do I get to senior people?” IBM heard these views over and over again from young interns who asked to work with its most brilliant managers. Zagante’s senior executives had better start taking Jeremy seriously, and working with him directly.
+For people like Jeremy, the third priority is to have a wonderful place to work. We’re all familiar with the basics: trust, fairness, accountability, clear goals, great leadership, nice surroundings, fair pay, and lots of recognition.
+Given the scope of this case study, it’s hard to know how Zagante would stack up in this regard, but it’s safe to say that the company’s senior management needs to do a better job of inspiring its people.
+The fourth priority for young workers is to gather good work experience. Instead of worrying about Jeremy’s moonlighting, Zagante might begin by getting to know him better.
+Melanie, Jill, and other managers need to find out what Jeremy dreams of doing, then build a portfolio of experiences that, as much as possible, fulfills his ambitions and goals. For example, he could be invited to speak to the senior team about user needs or be placed in charge of a next-generation intranet or extranet.
+Whatever the specifics turn out to be, Zagante should stop focusing exclusively on TerraPix 2.0 and how Jeremy is investing his off-hours. Instead, it should start envisioning him as a key player in the company’s future.
+Bill Jensen is founder and CEO of the Jensen Group, a change consulting firm in Morristown, New Jersey. He is the author of Work 2.0: Rewriting the Contract(Perseus Publishing, 2002).
+
+----------------------------------------
+
+
+==================== Page 8 ====================
+
+[OUTLIER] How
+
+----------------------------------------
+
+should Zagante Systems handle this moonlighting
+
+----------------------------------------
+
+[OUTLIER] issue?
+
+----------------------------------------
+
+[OUTLIER] Although managers may recoil at their employees’ moonlighting, it is a fact of life in many professional services industries.
+
+----------------------------------------
+
+[OUTLIER] Melanie made her first mistake by trying to solve the problem herself. She should have contacted HR’s Jill Darby as soon as she found out about Jeremy’s extracurricular activities. Jill, in turn, should have contacted Zagante’s employment lawyer to make sure Jeremy wasn’t breaking any laws, and to get started on a response to Jeremy’s situation that legally protected the company while meeting such a key employee’s needs. That response could then have formed the basis of a solid moonlighting policy, which the company definitely needs in order to prevent future problems.
+For any company, the first step in developing a moonlighting policy is to grapple with the legal and ethical issues.
+Zagante also needs to weigh the employee’s interests against its own. For Jeremy, moonlighting garners greater income, recognition, and work experience. On the other hand, there are plenty of good business and legal reasons why many employers develop policies discouraging this kind of activity. First of all, moonlighting can seriously damage productivity. If Jeremy is worn out by his extracurricular activities and his work suffers, Zagante may lose clients and customers as a result. Moreover, Jeremy has, at least once, used company resources for his moonlighting activities. If he makes a mistake or causes problems for an outside customer, Zagante could be exposed to uninsured liability. Although managers like Melanie may recoil at the thought of their employees’ moonlighting, it is a fact of life in many professional services industries, including high technology, where employees change jobs frequently and have fleeting loyalties. Given this fact, Zagante must develop an approach to moonlighting that reflects the company’s need to protect itself while continuing to attract and retain talented employees like Jeremy.
+Zagante could start by doing some research: How do its competitors deal with moonlighting? If the industry standard is
+
+----------------------------------------
+
+[OUTLIER] to permit—or at least not strictly prohibit—the practice, then Zagante can ill afford to take a hard-line approach. Instead, it should develop a creative approach that allows Jeremy to carry on his extracurricular activities while protecting the company against the downsides of moonlighting.
+For example, depending on the scope of its existing noncompete policy, Zagante may be able to develop a more comprehensive moonlighting approach. The noncompete policy should state that employees may not compete with the company for clients or appropriate the company’s trade secrets, resources, equipment, and time in servicing their own clients.
+In addition, Zagante’s counsel may suggest that employees be required to disclose their employment status to moonlighting clients and agree to indemnify Zagante for any liability arising from their moonlighting activities.
+The noncompete policy should state that its terms are not intended to create an employment contract. In that way, employees like Jeremy could still pursue independent projects while minimizing the associated risks to Zagante. And the company would still be free to terminate employees whose moonlighting begins to inhibit job performance or constitutes a breach of loyalty.
+Once Zagante has developed a moonlighting policy, it should be made part of a comprehensive employee manual that includes other workplace guidelines and information.
+Jill, as HR director, should distribute the manual and, together with management, discuss it with employees at a company meeting. In the unlikely event that employees object to the policy, Zagante should address their concerns while explaining the legal rationale and basis for it. A balanced and flexible approach to moonlighting will help ensure Zagante’s longterm competitiveness in a tight labor market.
+Barry LePatner is the founder of Barry B.
+LePatner & Associates, a New York-based legal firm serving the real estate, design, and construction industries.
+
+----------------------------------------
+
+
+==================== Page 9 ====================
+
+[OUTLIER] How
+
+----------------------------------------
+
+should Zagante Systems handle this moonlighting
+
+----------------------------------------
+
+[OUTLIER] issue?
+
+----------------------------------------
+
+[OUTLIER] An outright ban on moonlighting is not justified, cannot be enforced, and only alienates alreadystressed employees.
+
+----------------------------------------
+
+[OUTLIER] There are two issues here. One has to do with Melanie’s emotional response to Jeremy’s moonlighting, and the other has to do with Zagante’s failure to deal with employee motale. While Melanie’s sympathy to Jeremy’s family pressures is laudable, she must separate her worries about Jeremy from business concerns.
+Along with Queen’s University economist Lisa Powell, we analyzed national survey data from the 1980s and 1990s to understand why employees moonlight. Our analysis revealed that workers like Jeremy have two primary motives. The first is monetary: Their salaried jobs don’t allow them to increase their earnings without getting a raise (we call this the “constraints motive”). The second motive has to do with nonmonetary benefits these individuals derive from the second job (we call this the “heterogeneous jobs motive”). In Jeremy’s case, the second motive implies that he’ll have the chance to explore challenging new territory and to hone skills that will improve his performance.
+First, Zagante needs to somehow address the constraints motive. Without salary increases, Zagante’s workers have experienced a decline in their hourly wages primarily because of the overtime hours they’ve had to work. Overworked and underpaid employees will eventually seek better jobs. To address this problem, Zagante could formalize Melanie’s offer of future comp time by linking comp hours to recorded overtime beyond some set threshold. If Jeremy knew he was being considered for promotion, then that would serve as another tangible benefit to the uncompensated overtime he’s currently working.
+Second, Melanie—and, by _ extension, Zagante—needs to address the heterogeneous jobs motive. Labor research suggests that job or career changes are often preceded by a job-testing style like Jeremy’s. Clearly, Jeremy is a valuable employee; moreover, an outright ban on moonlighting is not justified, cannot be enforced, and only alienates already-stressed employees. Therefore, permit-
+
+----------------------------------------
+
+[OUTLIER] ting Jeremy to moonlight is probably worth the risk because it helps to satisfy his curiosity while enabling him to earn extra money. Melanie should also recognize that Jeremy’s moonlighting has an upside. The contract work is allowing him to learn a valuable skill on his own time.
+That said, Zagante still needs a moonlighting policy. The policy could be flexible—and even seen as a perk to compensate valuable employees, at least in part, for the lack of salary increases. It could also be tailored to individual employees. Permitting moonlighting with prior approval gives management a chance to discourage the practice for marginal workers or for questionable projects. And it allows management to give a thumbs-up to workers whose stellar performance has not been rewarded with salary increases. Stipulating managerial approval would also permit Melanie to discuss, up front, whether Jeremy’s productivity was a concern.
+Zagante’s policy should ban moonlighting work on-site. The risks to company hardware and software from outside viruses or system overload are too great and threats to company morale too substantial to permit in-your-face moonlighting. If face time is a gauge of employee commitment at Zagante, management must minimize the chances that this credit is being applied unequally.
+Finally, to implement this flexible moonlighting policy, Melanie must improve her ability to assess employee performance. Specifically, she needs to rely on more than face time and vague self-reports as measures of productivity. More reliable measures of employee productivity would not only help Melanie implement a good moonlighting policy but make her other management decisions easier as well.
+Jean Kimmel is an associate professor of economics at Western Michigan University in Kalamazoo. Karen Conway is an associate professor of economics at the University of New Hampshire in Durham.
+
+----------------------------------------
+
+
+==================== Page 10 ====================
+
+[OUTLIER] How
+
+----------------------------------------
+
+[OUTLIER] should Zagante
+
+----------------------------------------
+
+[OUTLIER] Systems handle this
+
+----------------------------------------
+
+[OUTLIER] moonlighting
+
+----------------------------------------
+
+[OUTLIER] issue?
+
+----------------------------------------
+
+[OUTLIER] The basic principle we apply remains the same:
+Employees who take on outside work had better not cross the line.
+
+----------------------------------------
+
+[OUTLIER] I can certainly empathize with Zagante Systems’ problem. In my work as HR director for the City of Lake Wales, I experienced an extreme version of the moonlighting problem.
+In 1997, a water department supervisor started an irrigation business on the side. That would have been fine had he done the work on his own time with his own resources. Instead, he ran his business on city time, using city employees and equipment. We discovered what he was doing when we noticed an unusually high attrition rate in the water department. During the exit interviews, some employees told us that they were quitting because this supervisor had threatened to make life hard for them if they didn’t help him.
+This supervisor’s abuse was extreme, and we fired him. But the experience provided a valuable lesson. We were able to move quickly because we had an existing, albeit loosely applied, moonlighting policy. It clearly states that people may take outside jobs on their own time and with their own equipment. Another provision states that the employee is forbidden to have clients who work or contract for the city. Following the incident with that supervisor, we decided to enforce the policy more strictly than before. And we underscored it with an additional provision: Permission to do outside work must be granted by our ethics committee.
+Subsequently, we encountered few problems with moonlighters. In several scattered instances, the ethics board has vetoed a freelancing arrangement on the grounds that the work presented a conflict of interest. For example, the ethics committee turned down the request of a computer programmer who wanted to work after-hours for a private computer firm that consulted for our city. We may still have a few employees who don’t let us know about their extracurricular activities, but in our small organization, we believe these will come to light sooner or later.
+The basic principle we so stringently apply remains the same in Jeremy’s particular case:
+Employees who take on outside work had bet-
+
+----------------------------------------
+
+[OUTLIER] ter take care not to cross the line. Jill Darby is absolutely right to signal that any potential problem needs to be addressed—and pronto.
+When Melanie first caught Jeremy using company equipment for his free-lance work, she should have stopped him and asked him to refrain from doing any more until she could verify whether or not the company had a moonlighting policy and, if so, what it stipulated. Had a policy been in place, Melanie would have issued Jeremy a verbal warning that would have been documented in his employee file. If Jeremy persisted in using company equipment for his outside work, documentation of the events would have served as the basis for termination.
+But it’s not just about Jeremy. Jill needs to do a much better job of enrolling Melanie.
+Recognizing that the time had come to put a good moonlighting policy in place, Jill might have asked Melanie to help draft it, especially since Melanie experienced the problem firsthand with Jeremy. Jill also needs to recognize that Melanie is in serious need of managerial coaching. By allowing her feelings for Jeremy to cloud her judgment, Melanie is failing to do her duty as a manager. Furthermore, Jill needs to recognize that Melanie is confused and offer to partner her with a mentor—a veteran department head experienced in separating personal relationships from workplace necessities. Also, providing her with leadership and assertiveness training wouldn’t hurt, either.
+Finally, I would recommend that Melanie promote Jeremy. By providing him with more challenging work and greater income, a promotion will eliminate the two reasons why he’s moonlighting in the first place.
+Sandra Davis is the human resources director for the City of Lake Wales, Florida.
+Reprint RO211A Case only RO211X Commentary only R0O211Z To order, call 800-988-0886 or 617-783-7500 or go to www.hbr.org
+
+----------------------------------------
+

@@ -33,6 +33,43 @@ This tool requires the Tesseract OCR engine to be installed on your system.
 - **macOS**: `brew install tesseract`
 - **Linux (Debian/Ubuntu)**: `sudo apt-get install tesseract-ocr`
 
+## Performance & GPU Acceleration
+
+The text extraction process is CPU-intensive. To improve performance, this tool offers two acceleration methods:
+
+### Multi-Core CPU Parallelization
+
+For batch processing multiple files, the application uses a `ProcessPoolExecutor` to distribute the workload across multiple CPU cores. This significantly speeds up the processing of large numbers of documents by running them in parallel.
+- **How it works:** Each PDF is processed in a separate process, allowing the operating system to schedule these tasks across all available CPU cores.
+- **Controlling it:** Use the `--max_workers` flag to set the number of parallel processes. For optimal performance, it's often best to set this to the number of CPU cores on your machine.
+- **Choosing the Mode:** Use the `--parallel_mode` flag to switch between `thread` (default) and `process` (multi-core) execution. While `process` is typically better for CPU-bound tasks, `thread` may be faster on systems where process creation is slow or where the task has significant I/O, such as reading files or loading models. It is recommended to benchmark both modes on your specific workload.
+    ```bash
+    # Process a folder using 10 threads (default mode)
+    python main.py "./input_folder" --max_workers 10
+    
+    # Process a folder using 4 CPU cores (for comparison)
+    python main.py "./input_folder" --max_workers 4 --parallel_mode process
+    ```
+
+### GPU Acceleration for Context Analysis
+
+The semantic context analysis (`--analyze_context`) can be further accelerated using an NVIDIA GPU. This offloads the heavy machine learning computations from the CPU.
+
+**How to Enable GPU Acceleration**
+
+1.  **Hardware/Driver Requirement:** You need an NVIDIA GPU with the appropriate CUDA drivers installed on your system.
+2.  **Install GPU-Enabled PyTorch:** The standard `torch` package in `requirements.txt` is for CPU only. To enable GPU support, you must install the PyTorch version that matches your system's CUDA version.
+    -   First, uninstall the existing CPU version: `pip uninstall torch torchvision torchaudio`
+    -   Visit the [Official PyTorch Website](https://pytorch.org/get-started/locally/) to find the correct installation command for your specific setup (OS, package manager, CUDA version). For example, a common command for CUDA 11.8 is:
+        ```bash
+        pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+        ```
+3.  **Run with Context Analysis:** Execute the script with the `--analyze_context` flag.
+    ```bash
+    python main.py "path/to/your/document.pdf" --analyze_context
+    ```
+
+The application will automatically detect the GPU and use it for the natural language processing tasks, which can result in a **10x or greater speedup** for the context analysis step. The rest of the pipeline will continue to run in parallel on the CPU.
 
 ## How to Use
 
@@ -92,7 +129,11 @@ This tool requires the Tesseract OCR engine to be installed on your system.
     - `--output_dir`: Specify a directory for the output files (defaults to `output/`).
     - `--final_output_dir`: Specify a separate directory for final text output files (optional).
     - `--debug`: Enable debug mode to save bounding box images (optional, defaults to False).
-    - `--max_workers`: Maximum number of parallel workers for batch processing (default: 10).
+    - `--max_workers`: The maximum number of parallel threads or processes to use for batch processing.
+    - `--parallel_mode`: The parallel execution mode. `thread` (default) is often faster for mixed I/O and CPU workloads, while `process` is better for purely CPU-bound tasks.
+    - `--min_region_confidence`: The minimum average confidence score (0-100) for a detected text region to be included. Lower values may include text from images. (Default: 50).
+    - `--cleanup`/`--no-cleanup`: Enable or disable automatic text cleanup (de-hyphenation, etc.). Enabled by default. (Default: True).
+    - `--analyze_context`: Enable semantic analysis to find and tag outlier text regions. Disabled by default.
     - `--top_margin`: Percentage of the page to exclude from the top (e.g., `0.1` for 10%).
     - `--bottom_margin`: Percentage of the page to exclude from the bottom.
     - `--ignore_vertical`: A flag to ignore vertically oriented text.
